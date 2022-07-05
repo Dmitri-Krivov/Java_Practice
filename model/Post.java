@@ -16,6 +16,8 @@ public class Post implements Comparable<Post> {
 		this.postId = postId;
 		this.title = title;
 		this.content = content;
+		this.date = LocalDateTime.now();
+		likes = 0;
 	}
 
 	public String getContent() {
